@@ -17,28 +17,28 @@ RUN \
     && apt autoremove -y
 
 RUN \
-    cd /Downloads \
+    cd /root \
     && wget http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.gz \
     && tar zxvf m4-1.4.18.tar.gz \
     && cd m4-1.4.18 \
     && ./configure && make && make install
 
 RUN \
-    cd /Downloads \
+    cd /root \
     && wget http://ftp.gnu.org/gnu/bison/bison-3.0.5.tar.gz \
     && tar zxvf bison-3.0.5.tar.gz \
     && cd bison-3.0.5 \
     && ./configure && make && make install
 
 RUN \
-    cd /Downloads \
+    cd /root \
     && wget http://ftp.gnu.org/gnu/gawk/gawk-4.2.1.tar.gz \
     && tar zxvf gawk-4.2.1.tar.gz \
     && cd gawk-4.2.1 \
     && ./configure && make && make install
 
 RUN \
-    cd /Downloads \
+    cd /root \
     && wget http://ftp.gnu.org/gnu/libc/glibc-2.28.tar.gz \
     && tar zxvf glibc-2.28.tar.gz \
     && cd glibc-2.28 \
